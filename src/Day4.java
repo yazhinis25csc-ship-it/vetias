@@ -1,3 +1,6 @@
+/**
+ *
+ */
 /*void main(){
     int[][]marks=new int[5][3];
     int[][] studentmarks={
@@ -14,7 +17,7 @@
         System.out.println();
     }
 }*/
-void main() {
+/*void main() {
     int[][] studentattendance = {
             {0, 1, 0},
             {1, 0, 0},
@@ -37,4 +40,41 @@ void main() {
     System.out.println(" ");
 
 }
+}*/
+  /* void main() {
+        int result = sub(5,4);
+        System.out.println(result);
+        System.out.println(sub(5,5));
+    }
+        public int sub(int a,int b) {
+            return a - b;
+        }*/
+   /*void main(){
+       int result=multiple(8,7);
+       System.out.println(result);
+       System.out.println(multiple(7,7));
+   }
+   public int multiple(int a,int b){
+       return a*b;
+   }*/
+
+/*void main(){
+    int result=division(8,7);
+    System.out.println(result);
+    System.out.println(division(7,7));
 }
+public int division(int a,int b){
+    return a/b;
+}*/
+
+void main(){
+    int result=moduls(8,7);
+    System.out.println(result);
+    System.out.println(moduls(7,7));
+}
+public int moduls(int a,int b){
+    return a%b;
+}
+
+
+
