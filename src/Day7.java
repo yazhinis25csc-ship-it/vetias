@@ -25,7 +25,7 @@
 
 import com.sun.net.httpserver.Request;
 
-public class Day7{
+/*public class Day7{
     static class Request{
         String name;
         String date;
@@ -71,4 +71,44 @@ public class Day7{
         OnDutyRequest onDutyRequest = new OnDutyRequest("Menaga","11.07.2026","Culturals");
         onDutyRequest.rejectOnDutyRequest();
     }
-}
+}*/
+
+public class Day7{
+    static class payment{
+        String Amount;
+
+         void transfer(){
+             System.out.println("make a transfer");
+        }
+    }
+    static class upipayment extends payment{
+        @Override
+        void transfer() {
+            System.out.println("upipayment");
+        }
+    }
+    static class cardpayment extends payment{
+    void transfer(){
+        System.out.println("Cardpayment");
+    }
+
+    }
+    static class Netbankingpayment extends payment{
+        void transfer(){
+            System.out.println("Netbankingpayment");
+        }
+    }
+     static void main(){
+        upipayment upipayment=new upipayment();
+        upipayment.transfer();
+
+             cardpayment cardpayment=new cardpayment();
+             cardpayment.transfer();
+
+
+             Netbankingpayment Netbankingpayment=new Netbankingpayment();
+             Netbankingpayment.transfer();
+         }
+         }
+
+
