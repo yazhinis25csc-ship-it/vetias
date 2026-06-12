@@ -87,6 +87,8 @@ public class Day7{
             System.out.println("upipayment");
         }
     }
+
+
     static class cardpayment extends payment{
     void transfer(){
         System.out.println("Cardpayment");
