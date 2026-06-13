@@ -87,15 +87,10 @@ public class Day7{
             System.out.println("upipayment");
         }
     }
-
-
-
-
     static class cardpayment extends payment{
     void transfer(){
         System.out.println("Cardpayment");
     }
-
     }
     static class Netbankingpayment extends payment{
         void transfer(){
@@ -108,7 +103,6 @@ public class Day7{
 
              cardpayment cardpayment=new cardpayment();
              cardpayment.transfer();
-
 
              Netbankingpayment Netbankingpayment=new Netbankingpayment();
              Netbankingpayment.transfer();
