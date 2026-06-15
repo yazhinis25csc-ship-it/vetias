@@ -66,7 +66,7 @@ static void main(){
 }
 }*/
 
-public class day8 {
+/*public class day8 {
     enum LANGUAGE {
         EN("English"),
         GR("German"),
@@ -84,9 +84,6 @@ public class day8 {
         System.out.println(LANGUAGE.GR.value);
         System.out.println(LANGUAGE.JP.value);
         System.out.println(LANGUAGE.TA.value);
-
-
-
     }
-}
+}*/
 
