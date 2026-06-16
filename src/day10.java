@@ -6,6 +6,8 @@ public class day10 {
         studentList.add("Ram");
        studentList.add("ABC");
         studentList.add("xyz");
+        studentList.add("xyt");
+        studentList.add("xye");
         for (String s : studentList) {
             System.out.println(s);
         }
