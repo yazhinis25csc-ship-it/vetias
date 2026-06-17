@@ -38,9 +38,7 @@ public class day10 {
         }
     }*/
 import java.util.LinkedList;
-
-import java.util.LinkedList;
-class Student{
+/*class Student{
     String name;
     int regno;
     int marks;
@@ -54,11 +52,12 @@ class Student{
         return "Name:"+name+
                 ",regno:"+regno+
                 ", Marks:"+marks;
-    }}
+    }
+}
 public class day10{
     static void main() {
         LinkedList<Student> students = new LinkedList<>();
-        students.add(new Student("abc", 101, 80));
+        students.add(new Student("abc", 100, 80));
         students.add(new Student("dfg", 102, 90));
         students.add(new Student("ggj", 103, 87));
         students.add(new Student("fgh", 104, 78));
@@ -83,7 +82,60 @@ public class day10{
         for (Student s : students) {
             System.out.println(s);
         }
+    }*/
+/*import java.util.LinkedList;
+
+public class Day10Linked {
+
+    static class Student {
+        String name;
+        int regNo;
+        int marks;
+
+        Student(String name, int regNo, int marks) {
+            this.name = name;
+            this.regNo = regNo;
+            this.marks = marks;
+        }
     }
+
+    static void removeStudent(LinkedList<Student> students) {
+        System.out.println("Removed : " + students.removeFirst().name);
     }
+
+    static void updateStudent(LinkedList<Student> students) {
+        for (Student s : students) {
+            if (s.name.equals("Deepa")) {
+                s.marks = 95; // Update marks from 85 to 95
+            }
+        }/*
+
+
+    /*public static void main(String[] args) {
+
+        LinkedList<Student> students = new LinkedList<>();
+
+        // Add 5 Students
+        students.add(new Student("Arun", 101, 80));
+        students.add(new Student("Bala", 102, 75));
+        students.add(new Student("Charan", 103, 90));
+        students.add(new Student("Deepa", 104, 85));
+        students.add(new Student("Esha", 105, 88));
+
+        // Remove 1 Student
+        removeStudent(students);
+        updateStudent(students);
+        System.out.println("\nStudent Details");
+        for (Student s : students) {
+            System.out.println(
+                    s.name + " " +
+                            s.regNo + " " +
+                            s.marks
+            );
+        }
+    }
+} */
+
+
 
 
