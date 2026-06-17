@@ -17,7 +17,7 @@ public class day10 {
    }
    }
    }*/
-import java.util.LinkedList;
+/*import java.util.LinkedList;
 public class day10 {
     static void main() {
         LinkedList<String> queue = new LinkedList<String>() ;
@@ -36,5 +36,54 @@ public class day10 {
             System.out.println("Removed:" + removed);
 
         }
+    }*/
+import java.util.LinkedList;
+
+import java.util.LinkedList;
+class Student{
+    String name;
+    int regno;
+    int marks;
+    Student(String name ,int regno,int marks){
+        this.name=name;
+        this.regno=regno;
+        this.marks=marks;
     }
+    @Override
+    public String toString(){
+        return "Name:"+name+
+                ",regno:"+regno+
+                ", Marks:"+marks;
+    }}
+public class day10{
+    static void main() {
+        LinkedList<Student> students = new LinkedList<>();
+        students.add(new Student("abc", 101, 80));
+        students.add(new Student("dfg", 102, 90));
+        students.add(new Student("ggj", 103, 87));
+        students.add(new Student("fgh", 104, 78));
+        students.add(new Student("yuj", 105, 90));
+        System.out.println();
+        for (Student s : students) {
+            System.out.println(s);
+        }
+        students.removeFirst();
+        System.out.println("\nAfter removing first student");
+        for (Student s : students) {
+            System.out.println(s);
+        }
+        String searchvalue = "Ravi";
+        for (Student s : students) {
+            if (s.name.equalsIgnoreCase(searchvalue)) {
+                s.marks = 95;
+                break;
+            }
+        }
+        System.out.println("\nAfter updating Ravi's marks:");
+        for (Student s : students) {
+            System.out.println(s);
+        }
+    }
+    }
+
 
