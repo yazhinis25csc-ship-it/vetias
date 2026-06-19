@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-public class day13 {
+/*public class day13 {
     static void main(){
         Path path = Path.of("files","report.txt");
         try{
@@ -18,9 +18,27 @@ public class day13 {
             newData.add("nafeela");
             newData.add("parasnya");
             newData.add("ashiu");
+            Files.write(path,newData);
         } catch (IOException io){
-            System.out.println("successfully");
+            io.printStackTrace();
         }
     }
 
+}*/
+public class day13 {
+    static void main() {
+        Path path = Path.of("files", "students.csv");
+        try {
+            List<String> students = Files.readAllLines(path);
+            for (String line : students) {
+                String[] row = line.split(",");
+                for (int i = 0; i < row.length; i++) {
+                    System.out.print(row[i] + "|");
+                }
+                System.out.println();
+            }
+        } catch (IOException io) {
+          io.printStackTrace();
+        }
+    }
 }
