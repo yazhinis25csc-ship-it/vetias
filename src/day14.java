@@ -30,7 +30,6 @@ static class Student {
     }
 }
 static void main() {
-    // Student student = new Student("John",23, 425235, "21-12-5555",);
     Student student = new Student.Builder()
             .name("yazhu")
             .age(18)
