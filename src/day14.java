@@ -35,7 +35,6 @@ static void main() {
             .age(18)
             .regNo(24)
             .build();
-
     System.out.println(student.name);
     System.out.println(student.age);
     System.out.println(student.regNo);
