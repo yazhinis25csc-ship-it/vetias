@@ -27,5 +27,3 @@ public class day14_factory{
         getnotification(factory,type).send("abc@gmail.com","your account debit 800 rupee");
         }
         }
-
-
