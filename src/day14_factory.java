@@ -1,4 +1,4 @@
-public class day14_factory {
+public class day14_factory{
     interface notification{
         void send(String to,String message);
     }
@@ -14,7 +14,7 @@ public class day14_factory {
             System.out.println("sending Debit:"+message+",to"+to);
         }
     }
-    static notification getnotification(day14_factory factory,String type) {
+    static notification getnotification(day14_factory factory,String type){
         return switch (type) {
             case "credit" -> factory.new creditnotification();
             case "Debit" -> factory.new Debitnotification();
